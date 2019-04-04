@@ -1,6 +1,3 @@
-[submodule "cloudformation"]
-	path = cloudformation
-	url = https://github.com/gabormarosi/cloudformation.git
 [submodule "lambda"]
 	path = lambda
 	url = https://github.com/gabormarosi/lambda.git
