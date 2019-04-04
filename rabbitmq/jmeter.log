@@ -1,0 +1,112 @@
+2019-04-04 15:59:29,629 INFO o.a.j.u.JMeterUtils: Setting Locale to en_US
+2019-04-04 15:59:29,698 INFO o.a.j.JMeter: Loading user properties from: /Users/gmarosi/tmp/apache-jmeter-5.1.1/bin/user.properties
+2019-04-04 15:59:29,701 INFO o.a.j.JMeter: Loading system properties from: /Users/gmarosi/tmp/apache-jmeter-5.1.1/bin/system.properties
+2019-04-04 15:59:29,723 INFO o.a.j.JMeter: Copyright (c) 1998-2019 The Apache Software Foundation
+2019-04-04 15:59:29,723 INFO o.a.j.JMeter: Version 5.1.1 r1855137
+2019-04-04 15:59:29,723 INFO o.a.j.JMeter: java.version=1.8.0_144
+2019-04-04 15:59:29,723 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2019-04-04 15:59:29,723 INFO o.a.j.JMeter: os.name=Mac OS X
+2019-04-04 15:59:29,723 INFO o.a.j.JMeter: os.arch=x86_64
+2019-04-04 15:59:29,723 INFO o.a.j.JMeter: os.version=10.14.3
+2019-04-04 15:59:29,723 INFO o.a.j.JMeter: file.encoding=UTF-8
+2019-04-04 15:59:29,724 INFO o.a.j.JMeter: java.awt.headless=null
+2019-04-04 15:59:29,724 INFO o.a.j.JMeter: Max memory     =1908932608
+2019-04-04 15:59:29,724 INFO o.a.j.JMeter: Available Processors =4
+2019-04-04 15:59:29,744 INFO o.a.j.JMeter: Default Locale=English (United States)
+2019-04-04 15:59:29,744 INFO o.a.j.JMeter: JMeter  Locale=English (United States)
+2019-04-04 15:59:29,745 INFO o.a.j.JMeter: JMeterHome=/Users/gmarosi/tmp/apache-jmeter-5.1.1
+2019-04-04 15:59:29,745 INFO o.a.j.JMeter: user.dir  =/Users/gmarosi/Dropbox/dev/openshift/main/rabbitmq
+2019-04-04 15:59:29,745 INFO o.a.j.JMeter: PWD       =/Users/gmarosi/Dropbox/dev/openshift/main/rabbitmq
+2019-04-04 15:59:29,754 INFO o.a.j.JMeter: IP: 192.168.99.1 Name: WUPNOTE92.local FullName: 192.168.99.1
+2019-04-04 15:59:37,655 INFO o.a.j.g.a.LookAndFeelCommand: Installing Darcula LAF
+2019-04-04 15:59:37,732 INFO o.a.j.g.a.LookAndFeelCommand: Using look and feel: com.bulenkov.darcula.DarculaLaf [Darcula]
+2019-04-04 15:59:37,733 INFO o.a.j.JMeter: Setting LAF to: com.bulenkov.darcula.DarculaLaf
+2019-04-04 15:59:38,021 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
+2019-04-04 15:59:41,527 WARN o.a.j.g.u.MenuFactory: Could not instantiate class: com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui
+java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_144]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_144]
+	at org.apache.jmeter.gui.util.MenuFactory.getGUIComponent(MenuFactory.java:174) ~[ApacheJMeter_core.jar:5.1.1 r1855137]
+	at org.apache.jmeter.gui.util.MenuFactory.initializeMenus(MenuFactory.java:141) ~[ApacheJMeter_core.jar:5.1.1 r1855137]
+	at org.apache.jmeter.gui.util.MenuFactory.<clinit>(MenuFactory.java:106) ~[ApacheJMeter_core.jar:5.1.1 r1855137]
+	at org.apache.jmeter.control.gui.TestPlanGui.createPopupMenu(TestPlanGui.java:92) ~[ApacheJMeter_core.jar:5.1.1 r1855137]
+	at org.apache.jmeter.gui.tree.JMeterTreeNode.createPopupMenu(JMeterTreeNode.java:185) ~[ApacheJMeter_core.jar:5.1.1 r1855137]
+	at org.apache.jmeter.gui.action.EditCommand.doAction(EditCommand.java:46) ~[ApacheJMeter_core.jar:5.1.1 r1855137]
+	at org.apache.jmeter.gui.action.ActionRouter.performAction(ActionRouter.java:88) ~[ApacheJMeter_core.jar:5.1.1 r1855137]
+	at org.apache.jmeter.gui.action.ActionRouter.lambda$actionPerformed$0(ActionRouter.java:70) ~[ApacheJMeter_core.jar:5.1.1 r1855137]
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311) [?:1.8.0_144]
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:756) [?:1.8.0_144]
+	at java.awt.EventQueue.access$500(EventQueue.java:97) [?:1.8.0_144]
+	at java.awt.EventQueue$3.run(EventQueue.java:709) [?:1.8.0_144]
+	at java.awt.EventQueue$3.run(EventQueue.java:703) [?:1.8.0_144]
+	at java.security.AccessController.doPrivileged(Native Method) [?:1.8.0_144]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80) [?:1.8.0_144]
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:726) [?:1.8.0_144]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201) [?:1.8.0_144]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116) [?:1.8.0_144]
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105) [?:1.8.0_144]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) [?:1.8.0_144]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93) [?:1.8.0_144]
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82) [?:1.8.0_144]
+Caused by: java.lang.NoClassDefFoundError: com/rabbitmq/client/ShutdownSignalException
+	at com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui.<init>(AMQPConsumerGui.java:21) ~[JMeterAMQP.jar:?]
+	... 26 more
+Caused by: java.lang.ClassNotFoundException: com.rabbitmq.client.ShutdownSignalException
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[?:1.8.0_144]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[?:1.8.0_144]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[?:1.8.0_144]
+	at com.zeroclue.jmeter.protocol.amqp.gui.AMQPConsumerGui.<init>(AMQPConsumerGui.java:21) ~[JMeterAMQP.jar:?]
+	... 26 more
+2019-04-04 15:59:41,569 WARN o.a.j.g.u.MenuFactory: Could not instantiate class: com.zeroclue.jmeter.protocol.amqp.gui.AMQPPublisherGui
+java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_144]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_144]
+	at org.apache.jmeter.gui.util.MenuFactory.getGUIComponent(MenuFactory.java:174) ~[ApacheJMeter_core.jar:5.1.1 r1855137]
+	at org.apache.jmeter.gui.util.MenuFactory.initializeMenus(MenuFactory.java:141) ~[ApacheJMeter_core.jar:5.1.1 r1855137]
+	at org.apache.jmeter.gui.util.MenuFactory.<clinit>(MenuFactory.java:106) ~[ApacheJMeter_core.jar:5.1.1 r1855137]
+	at org.apache.jmeter.control.gui.TestPlanGui.createPopupMenu(TestPlanGui.java:92) ~[ApacheJMeter_core.jar:5.1.1 r1855137]
+	at org.apache.jmeter.gui.tree.JMeterTreeNode.createPopupMenu(JMeterTreeNode.java:185) ~[ApacheJMeter_core.jar:5.1.1 r1855137]
+	at org.apache.jmeter.gui.action.EditCommand.doAction(EditCommand.java:46) ~[ApacheJMeter_core.jar:5.1.1 r1855137]
+	at org.apache.jmeter.gui.action.ActionRouter.performAction(ActionRouter.java:88) ~[ApacheJMeter_core.jar:5.1.1 r1855137]
+	at org.apache.jmeter.gui.action.ActionRouter.lambda$actionPerformed$0(ActionRouter.java:70) ~[ApacheJMeter_core.jar:5.1.1 r1855137]
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311) [?:1.8.0_144]
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:756) [?:1.8.0_144]
+	at java.awt.EventQueue.access$500(EventQueue.java:97) [?:1.8.0_144]
+	at java.awt.EventQueue$3.run(EventQueue.java:709) [?:1.8.0_144]
+	at java.awt.EventQueue$3.run(EventQueue.java:703) [?:1.8.0_144]
+	at java.security.AccessController.doPrivileged(Native Method) [?:1.8.0_144]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80) [?:1.8.0_144]
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:726) [?:1.8.0_144]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201) [?:1.8.0_144]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116) [?:1.8.0_144]
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105) [?:1.8.0_144]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) [?:1.8.0_144]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93) [?:1.8.0_144]
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82) [?:1.8.0_144]
+Caused by: java.lang.NoClassDefFoundError: com/rabbitmq/client/ShutdownSignalException
+	at com.zeroclue.jmeter.protocol.amqp.gui.AMQPPublisherGui.<init>(AMQPPublisherGui.java:44) ~[JMeterAMQP.jar:?]
+	... 26 more
+Caused by: java.lang.ClassNotFoundException: com.rabbitmq.client.ShutdownSignalException
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[?:1.8.0_144]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[?:1.8.0_144]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[?:1.8.0_144]
+	at com.zeroclue.jmeter.protocol.amqp.gui.AMQPPublisherGui.<init>(AMQPPublisherGui.java:44) ~[JMeterAMQP.jar:?]
+	... 26 more
+2019-04-04 15:59:43,159 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-04-04 15:59:43,160 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-04-04 15:59:43,160 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-04-04 15:59:43,160 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-04-04 15:59:43,160 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2019-04-04 15:59:43,160 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2019-04-04 15:59:44,196 INFO o.a.j.e.KeyToolUtils: keytool found at 'keytool'
+2019-04-04 15:59:44,197 INFO o.a.j.p.h.p.ProxyControl: HTTP(S) Test Script Recorder SSL Proxy will use keys that support embedded 3rd party resources in file /Users/gmarosi/tmp/apache-jmeter-5.1.1/bin/proxyserver.jks
+2019-04-04 15:59:44,497 INFO o.a.j.s.FileServer: Default base='/Users/gmarosi/Dropbox/dev/openshift/main/rabbitmq'
+2019-04-04 15:59:45,326 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2019-04-04 15:59:45,326 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to ISO-8859-1
+2019-04-04 15:59:45,327 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2019-04-04 15:59:45,327 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2019-04-04 16:28:32,763 INFO o.a.j.g.a.t.TemplateManager: Reading templates from: /Users/gmarosi/tmp/apache-jmeter-5.1.1/bin/templates/templates.xml

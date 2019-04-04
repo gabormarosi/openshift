@@ -1,0 +1,69 @@
+apiVersion: v1
+kind: DeploymentConfig
+metadata:
+  labels:
+    app: openshift-rabbitmq-metrics
+  name: openshift-rabbitmq-metrics
+spec:
+  replicas: 1
+  selector:
+    app: openshift-rabbitmq-metrics
+    deploymentconfig: openshift-rabbitmq-metrics
+  strategy:
+    activeDeadlineSeconds: 21600
+    resources: {}
+    rollingParams:
+      intervalSeconds: 1
+      maxSurge: 25%
+      maxUnavailable: 25%
+      timeoutSeconds: 600
+      updatePeriodSeconds: 1
+    type: Rolling
+  template:
+    metadata:
+      labels:
+        app: openshift-rabbitmq-metrics
+        deploymentconfig: openshift-rabbitmq-metrics
+    spec:
+      containers:
+        - image: >-
+            luiscoms/openshift-rabbitmq:3.6.5-management
+          imagePullPolicy: IfNotPresent
+          name: openshift-rabbitmq
+          ports:
+            - containerPort: 4369
+              protocol: TCP
+            - containerPort: 5671
+              protocol: TCP
+            - containerPort: 5672
+              protocol: TCP
+            - containerPort: 25672
+              protocol: TCP
+            - containerPort: 15671
+              protocol: TCP
+            - containerPort: 15672
+              protocol: TCP
+          resources: {}
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+          volumeMounts:
+            - mountPath: /var/lib/rabbitmq/
+              name: openshift-rabbitmq-metrics-1
+        - image: >-
+            kbudde/rabbitmq-exporter
+          imagePullPolicy: IfNotPresent
+          name: openshift-rabbitmq-sidecar
+          ports:
+            - containerPort: 9090
+              protocol: TCP
+          resources: {}
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext: {}
+      terminationGracePeriodSeconds: 30
+      volumes:
+        - emptyDir: {}
+          name: openshift-rabbitmq-metrics-1
+  test: false
+status: {}

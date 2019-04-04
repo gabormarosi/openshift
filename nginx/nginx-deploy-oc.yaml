@@ -1,0 +1,28 @@
+apiVersion: apps.openshift.io/v1
+kind: DeploymentConfig
+metadata:
+  labels:
+  name: nginx
+  namespace:
+spec:
+  minReadySeconds: 10
+  replicas: 6
+  selector:
+    run: nginx
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+    type: Rolling
+  template:
+    metadata:
+      labels:
+        run: nginx
+    spec:
+      containers:
+      - image: kalise/nginx:latest
+        name: nginx
+        ports:
+        - containerPort: 8080
+          protocol: TCP
+      restartPolicy: Always

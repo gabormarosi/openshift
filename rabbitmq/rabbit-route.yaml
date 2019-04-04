@@ -1,0 +1,24 @@
+apiVersion: v1
+kind: Route
+metadata:
+  name: openshift-rabbitmq
+  labels:
+    app: openshift-rabbitmq
+spec:
+  host: openshift-rabbitmq-rabbit.192.168.99.103.nip.io
+  port:
+    targetPort: admin
+  to:
+    kind: Service
+    name: openshift-rabbitmq
+    weight: 100
+  wildcardPolicy: None
+status:
+  ingress:
+    - conditions:
+        - lastTransitionTime: '2019-04-03T15:12:12Z'
+          status: 'True'
+          type: Admitted
+      host: openshift-rabbitmq-rabbit.192.168.99.103.nip.io
+      routerName: router
+      wildcardPolicy: None
